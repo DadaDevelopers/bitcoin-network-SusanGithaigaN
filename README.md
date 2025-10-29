@@ -38,6 +38,7 @@ Step 4: Verify Blockchain Info
 bitcoin-cli -regtest getblockchaininfo
 Confirms height, difficulty, and network details.
 
+[**Answer: See lab-1.txt**](./lab-1.txt)
 
 # Lab 2 — Running Multiple Nodes (Simulated Network)
 You can run multiple nodes on different ports to simulate propagation.
