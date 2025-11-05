@@ -26,6 +26,7 @@ touch bloom.py
 python3 bloom.py
 ```
 
+[**Answer: See bloom.py**](./bloom.py)
 
 *Output*
 <br>
