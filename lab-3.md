@@ -56,7 +56,7 @@ bitcoin-cli -regtest gettransaction $TXID
 
 ```
 
-**Output:*
+*Output:*
 
 ![txid](./imgs/txid.png)
 
