@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Hp77wqaS)
 # assignment-5
 # Bitcoin Network
 
@@ -37,6 +38,7 @@ Step 4: Verify Blockchain Info
 bitcoin-cli -regtest getblockchaininfo
 Confirms height, difficulty, and network details.
 
+[**Answer: See lab-1.md**](./lab-1.md)
 
 # Lab 2 — Running Multiple Nodes (Simulated Network)
 You can run multiple nodes on different ports to simulate propagation.
@@ -56,6 +58,8 @@ Step 3: Verify Connection
 bitcoin-cli -regtest getpeerinfo | jq '.[].addr'
 
 You should see 127.0.0.1:18445 listed.
+
+[**Answer: See lab-2.md**](./lab-2.md)
 
 # Lab 3 — Transaction Propagation and the Mempool
 
@@ -87,6 +91,8 @@ bitcoin-cli -regtest gettransaction $TXID
 
 Expected: confirmations: 1
 
+[**Answer: See lab-3.md**](./lab-3.md)
+
 # Lab 4 — Compact Block Relay (BIP152)
 
 **Objective**
@@ -110,6 +116,8 @@ bitcoin-cli -regtest generatetoaddress 1 $ADDRESS
 
 Watch for compact block announcements in debug logs.
 
+[**Answer: See lab-4.md**](./lab-4.md)
+
 # Lab 5 — Compact Block Filters (BIP157/158)
 
 Step 1: Run a Node with Compact Filter Index
@@ -128,6 +136,8 @@ Returns filter header and filter data (Golomb-Rice encoded bitstream).
 Step 3: Decode Filter (Optional)
 
 Install neutrino or btcd client to test SPV-like behavior locally.
+
+[**Answer: See lab-5.md**](./lab-5.md)
 
 # Lab 6 — Merkle Tree Exploration
 
@@ -152,6 +162,8 @@ print(root)
 
 Matches the block’s merkleroot .
 
+[**Answer: See lab-6.md**](./lab-6.md)
+
 # Lab 7 — Bloom Filters (BIP37)
 
 Step 1: Use bitcoin-cli RPC (legacy)
@@ -171,6 +183,8 @@ Demonstrate how probabilistic matching works.
 
 Discussion: Emphasize deprecation due to privacy leaks (clients revealed interests).
 
+[**Answer: See lab-7.md**](./lab-7.md)
+
 # Lab 8 — Observing Consensus Rules
 
 Step 1: Corrupt a Block (for demo only)
@@ -187,6 +201,8 @@ Node rejects the corrupted block → error: bad-blk in logs.
 
 Lesson: Consensus rules are strict; invalid data is rejected network-wide.
 
+[**Answer: See lab-8.md**](./lab-8.md)
+
 # Lab 9 — Visualizing Peer Connections
 
 Step 1: View Network Graph
@@ -199,6 +215,8 @@ Displays peer count, local services, relay fees, and protocol version.
 
 Tip: Each peer connection is a TCP link exchanging compact messages — similar to sockets in general
 networking.
+
+[**Answer: See lab-9.md**](./lab-9.md)
 
 # Lab 10 — Cleanup
 
@@ -220,3 +238,5 @@ How consensus ensures integrity and immutability.
 
 Next step: Integrate these insights into Bitcoin Core RPC automation or monitoring scripts to extend
 infrastructure-level understanding.
+
+[**Answer: See lab-10.md**](./lab-10.md)
